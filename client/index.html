@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Word Puzzle</title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Corben"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nobile"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <section class="nav-section">
+        <img class="left" src="./logo.png" />
+        <h1 class="middle">Daily Word Search</h1>
+        <h4 class="right">Create</h4>
+      </section>
+
+      <section class="custom-grid-section">
+        <div class="config">
+          <div class="div-words">
+            <label>Words</label>
+            <input id="add-words" placeholder="BUG,WRATH,ERROR,POODLE" />
+          </div>
+
+          <div class="div-grid">
+            <label>Grid Size</label>
+            <input
+              id="grid-size"
+              type="number"
+              min="1"
+              max="50"
+              step="1"
+              value="10"
+            />
+          </div>
+        </div>
+
+        <button class="submit-words">Generate Grid</button>
+      </section>
+
+      <section class="grid-area"></section>
+      <section class="word-list"></section>
+    </div>
+
+    <script type="module" src="./js/index.js"></script>
+  </body>
+</html>
