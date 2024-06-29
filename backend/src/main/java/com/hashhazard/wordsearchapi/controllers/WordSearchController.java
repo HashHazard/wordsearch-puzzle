@@ -15,7 +15,7 @@ import com.hashhazard.wordsearchapi.services.WordGridService;
 
 @RestController
 @RequestMapping("/")
-@CrossOrigin(origins = "http://127.0.0.1:5500")
+@CrossOrigin(origins = "https://wordsearch-puzzle.vercel.app/")
 public class WordSearchController {
 
     @Autowired
