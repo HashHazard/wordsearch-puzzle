@@ -15,7 +15,9 @@ import com.hashhazard.wordsearchapi.services.WordGridService;
 
 @RestController
 @RequestMapping("/")
-@CrossOrigin(origins = "https://wordsearch-puzzle.vercel.app/")
+@CrossOrigin(origins = "https://wordsearch-puzzle.vercel.app")
+// @CrossOrigin(origins = "*")
+// @CrossOrigin(origins = "http://localhost:5173")
 public class WordSearchController {
 
     @Autowired
@@ -37,7 +39,7 @@ public class WordSearchController {
 
         }
 
-        // System.out.println(words);
+        System.out.println(words);
         return gridToString;
     }
 }
