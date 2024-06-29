@@ -95,7 +95,7 @@ Start the backend server. It will be located at http://localhost:8080:
 #### Create Word Grid
 
 ```http
-  GET /wordgrid?gridSize=${int}&wordList=${string}
+GET /wordgrid?gridSize=${int}&wordList=${string}
 ```
 
 | Parameter  | Type     | Description                                 |
