@@ -31,7 +31,7 @@ async function fetchGridInfo(gridSize, commaSeperatedWords) {
   try {
     let response = await fetch(
       // `http://localhost:8080/wordgrid?gridSize=${gridSize}&wordList=${commaSeperatedWords}`
-      `http://wordsearch-springboot.onrender.com/wordgrid?gridSize=${gridSize}&wordList=${commaSeperatedWords}`
+      `https://wordsearch-springboot.onrender.com/wordgrid?gridSize=${gridSize}&wordList=${commaSeperatedWords}`
     );
     response = await response.text();
     return response.split(" ");
